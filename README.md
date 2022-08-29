@@ -1,2 +1,2 @@
-# kakaomp-exercise
-kakao map API 이용한 검색 기능 구현 연습
+# 목적
+오클 앱 필요기능 연습 레포지토리 
