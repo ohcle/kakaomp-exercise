@@ -1,14 +1,13 @@
-# 목적
-오클 앱 필요기능 연습 레포지토리 
+//
+//  URL+.swift
+//  exercise
+//
+//  Created by Do Yi Lee on 2022/08/30.
+//
 
-# 브랜치 규칙
-- exercise : 해당 브랜치에서 각 연습기능별로 브랜치 생성 후 exercise로 merge 
+import Foundation
 
-## Trouble Shooting
-
-```
-swift
-    // 이거하면 왜 URL이 nil로 리턴 안됨? https://stackoverflow.com/questions/48576329/ios-urlstring-not-working-always
+extension URL {
     init?(_ string: String) {
         guard string.isEmpty == false else {
             return nil
@@ -22,4 +21,4 @@ swift
             return nil
         }
     }
-```
+}

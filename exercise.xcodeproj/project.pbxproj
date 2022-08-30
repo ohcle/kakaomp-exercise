@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A89691AA28BE2AD700456681 /* KakaoMapViewSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89691A928BE2AD700456681 /* KakaoMapViewSearchBarDelegate.swift */; };
+		A89691AC28BE2C4200456681 /* KakaoMpaViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89691AB28BE2C4200456681 /* KakaoMpaViewDelegate.swift */; };
+		A89691AF28BE2D0000456681 /* URL+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89691AE28BE2D0000456681 /* URL+.swift */; };
 		A89D622728B8852B000B7B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D622628B8852B000B7B75 /* AppDelegate.swift */; };
 		A89D622928B8852B000B7B75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D622828B8852B000B7B75 /* SceneDelegate.swift */; };
 		A89D622B28B8852B000B7B75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D622A28B8852B000B7B75 /* ViewController.swift */; };
@@ -54,6 +57,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A89691A928BE2AD700456681 /* KakaoMapViewSearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapViewSearchBarDelegate.swift; sourceTree = "<group>"; };
+		A89691AB28BE2C4200456681 /* KakaoMpaViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMpaViewDelegate.swift; sourceTree = "<group>"; };
+		A89691AE28BE2D0000456681 /* URL+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+.swift"; sourceTree = "<group>"; };
 		A89D622328B8852B000B7B75 /* exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89D622628B8852B000B7B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A89D622828B8852B000B7B75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +137,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A89691A728BE299100456681 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A89D622C28B8852B000B7B75 /* Main.storyboard */,
+				A89D622628B8852B000B7B75 /* AppDelegate.swift */,
+				A89D622828B8852B000B7B75 /* SceneDelegate.swift */,
+				A89D623128B8852C000B7B75 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A89691A828BE29A700456681 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A89D622A28B8852B000B7B75 /* ViewController.swift */,
+				A89691A928BE2AD700456681 /* KakaoMapViewSearchBarDelegate.swift */,
+				A89691AB28BE2C4200456681 /* KakaoMpaViewDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A89691AD28BE2CF100456681 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A89691AE28BE2D0000456681 /* URL+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		A89D621A28B8852B000B7B75 = {
 			isa = PBXGroup;
 			children = (
@@ -152,14 +187,12 @@
 		A89D622528B8852B000B7B75 /* exercise */ = {
 			isa = PBXGroup;
 			children = (
-				A89D629328B9E3B5000B7B75 /* Repository */,
+				A89691AD28BE2CF100456681 /* Extension */,
 				A89D629228B9DE0D000B7B75 /* Model */,
-				A89D622628B8852B000B7B75 /* AppDelegate.swift */,
-				A89D622828B8852B000B7B75 /* SceneDelegate.swift */,
-				A89D622A28B8852B000B7B75 /* ViewController.swift */,
-				A89D622C28B8852B000B7B75 /* Main.storyboard */,
+				A89691A728BE299100456681 /* View */,
+				A89691A828BE29A700456681 /* Controller */,
+				A89D629328B9E3B5000B7B75 /* Repository */,
 				A89D622F28B8852C000B7B75 /* Assets.xcassets */,
-				A89D623128B8852C000B7B75 /* LaunchScreen.storyboard */,
 				A89D623428B8852C000B7B75 /* Info.plist */,
 				A89D628D28B88694000B7B75 /* Header.h */,
 			);
@@ -353,6 +386,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A89691AC28BE2C4200456681 /* KakaoMpaViewDelegate.swift in Sources */,
+				A89691AA28BE2AD700456681 /* KakaoMapViewSearchBarDelegate.swift in Sources */,
+				A89691AF28BE2D0000456681 /* URL+.swift in Sources */,
 				A89D622B28B8852B000B7B75 /* ViewController.swift in Sources */,
 				A89D622728B8852B000B7B75 /* AppDelegate.swift in Sources */,
 				A89D629128B9DDDF000B7B75 /* KakaoRestAPIModel.swift in Sources */,
