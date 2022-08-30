@@ -141,8 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				A89D622C28B8852B000B7B75 /* Main.storyboard */,
-				A89D622628B8852B000B7B75 /* AppDelegate.swift */,
-				A89D622828B8852B000B7B75 /* SceneDelegate.swift */,
 				A89D623128B8852C000B7B75 /* LaunchScreen.storyboard */,
 			);
 			path = View;
@@ -151,6 +149,8 @@
 		A89691A828BE29A700456681 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A89D622628B8852B000B7B75 /* AppDelegate.swift */,
+				A89D622828B8852B000B7B75 /* SceneDelegate.swift */,
 				A89D622A28B8852B000B7B75 /* ViewController.swift */,
 				A89691A928BE2AD700456681 /* KakaoMapViewSearchBarDelegate.swift */,
 				A89691AB28BE2C4200456681 /* KakaoMpaViewDelegate.swift */,
