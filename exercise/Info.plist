@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocalNetworkUsageDescription</key>
+	<string>현재 계신 위치가 어딘지 알아야합니다. 한 번 허용하지면 더 이상 알람이 뜨지 않아요😆</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>현재 계신 위치가 어딘지 알아야합니다. 한 번 허용하지면 더 이상 알람이 뜨지 않아요😆</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>현재 계신 위치가 어딘지 알아야합니다. 😆</string>
+	<key>KAKAO_APP_KEY</key>
+	<string>e78a0ba0d7372b5370db8c893fd2d881</string>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Main</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+</dict>
+</plist>
