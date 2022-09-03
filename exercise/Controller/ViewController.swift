@@ -15,23 +15,26 @@ class ViewController: UIViewController {
     
     private var searchResultMapData: KakaoMapRestAPIModel?
     private var searchBarDelegate =  MapViewSearchBarDelegate()
+    private let serachController = UISearchController()
     private(set) var searchedResult = ""
     
+    private let locationManger = CLLocationManager()
     private(set) var currentLocation = CLLocationCoordinate2D(latitude: 33.41,
                                                               longitude: 126.52)
-    private let locationManger = CLLocationManager()
-    private let serachController = UISearchController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        askLocation()
-        setMpaView()
+        setMapView()
         setSearchBar()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        setLocationManage()
     }
 }
 
 extension ViewController {
-    private func setMpaView() {
+    private func setMapView() {
         self.mapView = MTMapView(frame: self.view.frame)
         self.mapView.delegate = self.mapViewDeleate
         self.mapView.baseMapType = .standard
@@ -44,15 +47,15 @@ extension ViewController {
         self.serachController.searchBar.delegate = self.searchBarDelegate
         self.serachController.searchResultsUpdater = self
         self.serachController.searchBar.barTintColor = .blue
-    }
-    
-    private func askLocation() {
-        self.locationManger.delegate = self
-        self.locationManger.requestWhenInUseAuthorization()
         self.navigationItem.searchController = self.serachController
     }
     
-    private func showMarker() {
+    private func setLocationManage() {
+        self.locationManger.delegate = self
+        self.locationManger.requestWhenInUseAuthorization()
+    }
+    
+    private func showMarkers() {
         self.mapView.removeAllPOIItems()
         var marker: [MTMapPOIItem] = []
         self.searchResultMapData?.documents.map { data in
@@ -78,6 +81,7 @@ extension ViewController: UISearchResultsUpdating {
         self.search()
     }
     
+    
     func updateSearchResults(for searchController: UISearchController) {
         guard let text = searchController.searchBar.text else {
             return
@@ -96,7 +100,8 @@ extension ViewController: UISearchResultsUpdating {
         }
         
         var request = URLRequest(url: url)
-        request.allHTTPHeaderFields = ["Authorization" : "KakaoAK \(authorizationKey)"]
+        request.allHTTPHeaderFields = ["Authorization" :
+                                        "KakaoAK \(authorizationKey)"]
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             guard let resultData = data else {
@@ -111,7 +116,7 @@ extension ViewController: UISearchResultsUpdating {
                 self.searchResultMapData = decodedData
                 
                 DispatchQueue.main.async {
-                    self.showMarker()
+                    self.showMarkers()
                 }
             } catch {
                 print(error)
@@ -130,7 +135,8 @@ extension ViewController: CLLocationManagerDelegate {
             return
         }
         
-        self.currentLocation = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        self.currentLocation = CLLocationCoordinate2D(latitude: latitude,
+                                                      longitude: longitude)
         
         self.mapView.currentLocationTrackingMode = .onWithoutHeading
         self.mapView.showCurrentLocationMarker = true
