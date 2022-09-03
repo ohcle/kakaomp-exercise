@@ -22,7 +22,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918.84057971014499" y="51.5625"/>
+            <point key="canvasLocation" x="419" y="756"/>
+        </scene>
+        <!--Login View Controller-->
+        <scene sceneID="GGv-Yg-mnj">
+            <objects>
+                <viewController id="ZaS-Ok-cfU" customClass="LoginViewController" customModule="exercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1ux-qU-U3K">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="UsY-3r-cHH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="64N-yZ-zGF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZq-zk-Oj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="419" y="84"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qlr-5i-OC9">
@@ -35,7 +51,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="1Ua-fw-oar"/>
+                        <segue destination="ZaS-Ok-cfU" kind="relationship" relationship="rootViewController" id="cgy-qY-8D3"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9tF-iS-3sf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

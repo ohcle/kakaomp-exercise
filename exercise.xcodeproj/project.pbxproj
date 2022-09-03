@@ -10,6 +10,7 @@
 		A89691AA28BE2AD700456681 /* KakaoMapViewSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89691A928BE2AD700456681 /* KakaoMapViewSearchBarDelegate.swift */; };
 		A89691AC28BE2C4200456681 /* KakaoMpaViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89691AB28BE2C4200456681 /* KakaoMpaViewDelegate.swift */; };
 		A89691AF28BE2D0000456681 /* URL+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89691AE28BE2D0000456681 /* URL+.swift */; };
+		A89783E528C3166C002304AA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89783E428C3166C002304AA /* LoginViewController.swift */; };
 		A89D622728B8852B000B7B75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D622628B8852B000B7B75 /* AppDelegate.swift */; };
 		A89D622928B8852B000B7B75 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D622828B8852B000B7B75 /* SceneDelegate.swift */; };
 		A89D622B28B8852B000B7B75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D622A28B8852B000B7B75 /* ViewController.swift */; };
@@ -60,6 +61,7 @@
 		A89691A928BE2AD700456681 /* KakaoMapViewSearchBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMapViewSearchBarDelegate.swift; sourceTree = "<group>"; };
 		A89691AB28BE2C4200456681 /* KakaoMpaViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoMpaViewDelegate.swift; sourceTree = "<group>"; };
 		A89691AE28BE2D0000456681 /* URL+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+.swift"; sourceTree = "<group>"; };
+		A89783E428C3166C002304AA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A89D622328B8852B000B7B75 /* exercise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = exercise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89D622628B8852B000B7B75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A89D622828B8852B000B7B75 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +151,7 @@
 		A89691A828BE29A700456681 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A89783E428C3166C002304AA /* LoginViewController.swift */,
 				A89D622628B8852B000B7B75 /* AppDelegate.swift */,
 				A89D622828B8852B000B7B75 /* SceneDelegate.swift */,
 				A89D622A28B8852B000B7B75 /* ViewController.swift */,
@@ -390,6 +393,7 @@
 				A89691AA28BE2AD700456681 /* KakaoMapViewSearchBarDelegate.swift in Sources */,
 				A89691AF28BE2D0000456681 /* URL+.swift in Sources */,
 				A89D622B28B8852B000B7B75 /* ViewController.swift in Sources */,
+				A89783E528C3166C002304AA /* LoginViewController.swift in Sources */,
 				A89D622728B8852B000B7B75 /* AppDelegate.swift in Sources */,
 				A89D629128B9DDDF000B7B75 /* KakaoRestAPIModel.swift in Sources */,
 				A89D622928B8852B000B7B75 /* SceneDelegate.swift in Sources */,
