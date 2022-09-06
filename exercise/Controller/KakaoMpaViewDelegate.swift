@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MapViewDelegate: NSObject, MTMapViewDelegate {
+final class MapViewDelegate: NSObject, MTMapViewDelegate {
     
 }
 

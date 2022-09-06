@@ -7,6 +7,6 @@
 
 import UIKit
 
-class MapViewSearchBarDelegate: NSObject, UISearchBarDelegate  {
+final class MapViewSearchBarDelegate: NSObject, UISearchBarDelegate  {
 
 }
