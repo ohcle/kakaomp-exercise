@@ -9,7 +9,7 @@ import UIKit
 import CoreLocation
 
 
-class ViewController: UIViewController {
+class KakaoMapViewController: UIViewController {
     private var mapView: MTMapView!
     private let mapViewDeleate: MTMapViewDelegate = MapViewDelegate()
     
@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     }
 }
 
-extension ViewController {
+extension KakaoMapViewController {
     private func setMapView() {
         self.mapView = MTMapView(frame: self.view.frame)
         self.mapView.delegate = self.mapViewDeleate
@@ -76,7 +76,7 @@ extension ViewController {
 }
 
 //MARK:- Keyword Search
-extension ViewController: UISearchResultsUpdating {
+extension KakaoMapViewController: UISearchResultsUpdating {
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         self.search()
     }
@@ -126,7 +126,7 @@ extension ViewController: UISearchResultsUpdating {
 }
 
 //MARK:- Location authorization use cases
-extension ViewController: CLLocationManagerDelegate {
+extension KakaoMapViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager,
                          didUpdateLocations locations: [CLLocation]) {
         
@@ -164,4 +164,8 @@ extension ViewController: CLLocationManagerDelegate {
         @unknown default: break
         }
     }
+}
+
+extension KakaoMapViewController {
+    
 }

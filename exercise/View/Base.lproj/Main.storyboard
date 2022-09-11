@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Kakao Map View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="exercise" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KakaoMapViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="KakaoMapViewController" customModule="exercise" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -31,14 +31,63 @@
                     <view key="view" contentMode="scaleToFill" id="1ux-qU-U3K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="yhy-yW-pUc" userLabel="loginProviderStackView">
+                                <rect key="frame" x="152" y="375" width="110" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="jZw-AG-Qxe"/>
+                                    <constraint firstAttribute="width" constant="110" id="lna-p7-vOR"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="UsY-3r-cHH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yhy-yW-pUc" firstAttribute="centerX" secondItem="UsY-3r-cHH" secondAttribute="centerX" id="Jhc-38-3z9"/>
+                            <constraint firstItem="yhy-yW-pUc" firstAttribute="centerY" secondItem="UsY-3r-cHH" secondAttribute="centerY" id="ftG-2u-j6Y"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="64N-yZ-zGF"/>
+                    <connections>
+                        <outlet property="loginProviderStackView" destination="yhy-yW-pUc" id="beM-9d-EJZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fZq-zk-Oj1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="419" y="84"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Rzc-K8-601">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ecB-mX-aZx" customClass="ResultViewController" customModule="exercise" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ycI-Ea-bKM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일이메일" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVt-P6-NRI" userLabel="userEmailLabel">
+                                <rect key="frame" x="24.5" y="442.5" width="365" height="21"/>
+                                <color key="backgroundColor" red="0.38956499950000001" green="0.57481449839999998" blue="0.32306350950000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u0l-SL-V0i"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gVt-P6-NRI" firstAttribute="centerY" secondItem="u0l-SL-V0i" secondAttribute="centerY" id="Foa-no-gbO"/>
+                            <constraint firstItem="gVt-P6-NRI" firstAttribute="height" secondItem="ycI-Ea-bKM" secondAttribute="height" multiplier="0.0234375" id="OEs-yG-kiy"/>
+                            <constraint firstItem="gVt-P6-NRI" firstAttribute="centerX" secondItem="u0l-SL-V0i" secondAttribute="centerX" id="uAb-FD-Ayc"/>
+                            <constraint firstItem="gVt-P6-NRI" firstAttribute="width" secondItem="ycI-Ea-bKM" secondAttribute="width" multiplier="0.881643" id="yiv-Jd-5VV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="userEmailLabel" destination="gVt-P6-NRI" id="15n-dm-HUf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQL-eN-L0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194.2028985507247" y="95.758928571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Qlr-5i-OC9">
@@ -62,6 +111,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
